@@ -1,0 +1,50 @@
+/* Centrer les sections avec un fond blanc */
+.section-blanche {
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  text-align: center;
+  margin: 0 auto; /* Centrer la section horizontalement */
+  max-width: 1200px; /* Limiter la largeur pour les grandes résolutions */
+}
+
+/* Style de la barre de navigation */
+.navbar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  z-index: 1;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #d0ff00;
+}
+
+/* Centrer les sections */
+#about, #community, #projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin: 0 auto; /* Centrer les sections */
+  max-width: 1200px; /* Limiter la largeur pour les grandes résolutions */
+}
+
+/* Ajuster la largeur des sections */
+#about, #community, #projects {
+  width: 100%;
+  max-width: 900px; /* Vous pouvez ajuster la largeur maximale selon vos préférences */
+}
